@@ -1,0 +1,28 @@
+
+.header {display: flex;justify-content: space-between;align-items: center;border-bottom: 2px solid  var(--main-color);   position: sticky;position: -webkit-sticky;top: 0;z-index: 1000;background-color: #ffffff;}
+.header > div{width:33%; }
+.headerLogo {text-align: center;}
+.headerMenu {padding: 0px 15px;}
+.headerUser {justify-content: flex-end;padding: 0px  5px 0px 0px;}
+img#imgLogo {padding: 4px 0px 0px 0px;height: 42px;}
+.headerMenu  img{ width: 21px;}
+.user-menu a img{width: 10px;}
+.headerUser {display: flex;align-items: center;}	
+.user-menu {margin: 23px 4px 0px 4px;}
+.name {color: #000;font-size: 12px;    line-height: 17px; text-align: right;}
+.contSecc {width: 94%;margin-top: 20px;margin: auto;}
+/*Titulo*/
+.titulo {padding: 2px 2% 6px 15px;
+    background-color: #fafafa;
+    font-size: 24px;color: #43413B;
+    font-weight: 800;text-align: left;margin-bottom: 15px;}
+.titulo .ruta {font-size: 12px;white-space: nowrap;text-overflow: ellipsis;padding: 1px 0px 0px 0px;}
+.titulo .ruta a {color: #7E7E7E;text-decoration: none;}
+.ruta a::after {
+    content: "/ ";
+    display: inline-block;
+    width: 0.4rem;
+    height: 0.4rem;
+    margin-left: 5px;
+    cursor: pointer;
+}

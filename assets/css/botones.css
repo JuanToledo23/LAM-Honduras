@@ -1,0 +1,107 @@
+.btnCenter {display: flex;justify-content: center; flex-wrap: wrap;   margin: 15px 0px 10px 0px;}
+.btnCenter a, .btnCenter button  {    margin: 0px 1% 10px 0px;}
+
+.btnDer {display: flex;justify-content: flex-end;flex-wrap: wrap;}
+.btnDer a {margin: 0px 0% 10px 2%;}
+.btnDer a:first-child {margin: 0px 0% 10px 0%;}
+
+.btnIzq {display: flex;justify-content:flex-start;flex-wrap: wrap;}
+.btnIzq a {margin: 0px 2% 10px 0%;}
+.btnIzq a:last-child {margin: 0px 0% 10px 0%;}
+
+.btnSpace{display: flex;justify-content: space-between;flex-wrap: wrap;}
+.btnSpace a, .btnSpace button {margin: 0px 0% 10px 0%;}
+
+.btnAround{display: flex;justify-content: space-around;flex-wrap: wrap;}
+.btnAround a, .btnAround button {margin: 0px 0% 10px 0%;}
+
+.botones {display: flex; margin: 18px 0px 0px 0px;}
+.botones button {    margin: 0px 1% 10px 0px;}
+.btn, button {
+    background-color: var(--main-color);
+    text-decoration: none;
+    color: #2d2926;
+    cursor: pointer;
+    padding: 5px 15px 5px 15px;
+    min-width: 120px;
+    max-width: 200px;
+    font-family: 'AvenirNextLTPro-Medium';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    margin: 0px 1% 10px 0px;
+    border: 0px solid transparent;
+
+}
+.btnG {
+    background-color: #54585a;
+    color: #fff;
+    font-family: 'Avenir_Next_Regular';
+}
+.btnB {
+    background-color: #fafafa;
+    -moz-box-shadow: 0px 0px 11px rgb(204, 202, 202);
+    -webkit-box-shadow: 0px 0px 11px rgb(204, 202, 202);
+    box-shadow: 1px 1px 3px rgb(204, 202, 202);
+}
+button div{    width: 15px;height: 15px;    margin: 0px 10px 0px 0px;}
+.btnGuardar div {background-image: url(../img/icoGuardar.svg);background-repeat: no-repeat;}
+.btnEditar div{background-image: url(../img/icoEditar.svg); background-repeat: no-repeat;}
+.btnLimpiar div{background-image: url(../img/icoLimpiar.svg);background-repeat: no-repeat;}
+.btnDescargar div{background-image: url(../img/icoDescargar.svg);background-repeat: no-repeat;}
+.btnImprimir div{background-image: url(../img/icoPrint.svg);background-repeat: no-repeat;}
+
+.btnWord div {background-image: url(../img/icoWord.svg);background-repeat: no-repeat;}
+.btnExcel div{background-image: url(../img/icoExcel.svg); background-repeat: no-repeat;}
+.btnPpt div{background-image: url(../img/icoPpt.svg);background-repeat: no-repeat;}
+.btnTxt div{background-image: url(../img/icoTxt.svg);background-repeat: no-repeat;}
+.btnPdf div{background-image: url(../img/icoPdf.svg);background-repeat: no-repeat;}
+
+.btnAgregar {
+    text-align: center;
+    padding: 5px 10px;
+    margin: auto;
+    text-decoration: none;
+    background-color: var(--main-color);
+    color: #2d2926;
+    cursor: pointer;
+    padding: 5px 15px 5px 15px;
+    min-width: 120px;
+    max-width: 250px;
+    font-family: 'AvenirNextLTPro-Medium';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+}
+.btnAgregar div {
+    background-image: url(../img/icoAgregar.svg);
+    background-repeat: no-repeat;
+    width: 17px;
+    height: 17px;
+    margin-right: 10px;    float: left;
+}
+
+.btnAgregar1 {
+    padding: 5px 0% 5px 0px;
+    font-family: 'Avenir_Next_Demi_Bold';
+    font-size: 14px;
+    color: #575757;
+    padding: 8px;
+    border: 1px #575757 dashed;
+    text-align: center;    background-color: #fff !important;
+}
+.btnAgregar1 img {width: 20px;height: 20px;}
+.gris .btnCenter.btnBotton {
+    position: absolute;
+    bottom: 10px;
+    right: 0px;
+    width: 100%;
+}
+
+.btn1 {background-color: var(--main-color);text-decoration: none;color: #ffffff;cursor: pointer;padding: 4px 15px 3px 15px;min-width: 120px;font-family: 'AvenirNextLTPro-Medium';display: flex;justify-content: center; align-items: center;height: 29px;}
+.btnG {background-color: #54585a;color: #fff;font-family: 'Avenir_Next_Regular';}
+
+.btnCenter {display: flex;justify-content: center; flex-wrap: wrap;   margin: 15px 0px 10px 0px;}
+.btnCenter a {    margin: 0px 1% 10px 0px;}

@@ -1,0 +1,92 @@
+input[type="text"], input[type="date"], input[type="number"], input[type="password"], select, .dk-selected,input[type="time"], input[type="search"]  {
+    background-color: #fff;
+    color: #2e2925;
+    border: 0px;
+    padding: 0px;
+    border-radius: 0px;
+    position: relative;
+    font-size: 11px;
+    padding: 0px 10px;
+    height: 29px;
+    width: 100%;border: 1px solid #bfbfbf;
+}
+input[type="search"]{width: 200px}
+select, .dk-selected{ -webkit-appearance:none;-moz-appearance:none; padding-right: 30px !important;}
+.w87{width: 87%; margin: auto;position: relative;}
+input.buscar {background-image: url(../img/lupa.svg);background-size: 16px;background-repeat: no-repeat;background-color: transparent;width: 17px;height: 17px;border: 0px;cursor: pointer;position: absolute;    right: 2%;bottom: 6px;
+}
+/* ****************** Select ***************************** */
+.dk-selected {background-image: url(../img/select.svg);background-position: 96% 50%;background-repeat: no-repeat;background-size: 15px;}
+.dk-select *{padding: 0px 10px;}
+.dk-select {position: relative;width: 100%;cursor: pointer;text-align: left;line-height: 26px;}
+.dk-select .dk-select-options {position: absolute;display: none; }
+/*submenu*/
+.dk-select-options {border: 1px solid #AAB7CE;border-bottom-left-radius: 5px;border-bottom-right-radius: 5px;list-style: none;min-width: 100%;overflow-x: hidden;overflow-y: auto;padding: 0px;z-index: 100;    margin: -1px;font-size: 11px;}
+/*Submenu seleccionado*/
+.dk-option-selected {background-color:  var(--main-color);color: #ffffff; }
+/*Submenu over*/
+.dk-select-options .dk-option-highlight {background-color:  var(--main-color);color: #ffffff; }
+.dk-select-open-up .dk-selected:after, .dk-select-open-down .dk-selected:after {border-left-color: #6F7E95; }
+.dk-select-open-up .dk-select-options, .dk-select-open-down .dk-select-options { background-color: #ffffff;display: block;border-color: #ededed;box-shadow: 0px 1px 6px 1px rgba(154, 150, 150, 0.5);}
+select, select[data-dkcacheid] {display: none; }
+/* ****************** Check box ***************************** */
+input[type=checkbox]{display: none;}
+
+input[type=checkbox] + label {
+    padding-left: 22px;
+    background-repeat: no-repeat;
+    background-size: 15px;
+    cursor: pointer;
+    display: inline-block;
+    background-image: url(../img/checkbox.svg);
+    background-position: 0px 7px;
+    padding: 6px 30px 5px 22px;
+}
+
+input[type=checkbox].inputDT + label {   
+    padding-left: 22px;
+    background-repeat: no-repeat;
+    background-size: 15px;
+    cursor: pointer;
+    height: 20px;
+    display: inline-block;
+    background-image: url(../img/checkbox.svg);
+    background-position: 7px 5px;padding: 11px;}
+input[type=checkbox]:checked + label {background-image:url(../img/checkbox1.svg); }
+
+input[type=checkbox].alone + label {background-position: 0px 2px;padding: 0px 13px 0px 0px;}
+
+
+input[type=checkbox].table  {   
+    padding-left: 22px;
+    background-repeat: no-repeat;
+    background-size: 15px;
+    cursor: pointer;
+    height: 20px;
+    display: inline-block;
+    background-image: url(../img/checkbox.svg);
+    background-position: 7px 5px;}
+input[type=checkbox].table:checked {background-image:url(../img/checkbox1.svg); }
+
+/* ****************** Radio ***************************** */
+input[type=radio]{display: none;}
+input[type=radio] + label {padding-left: 22px;background-repeat: no-repeat;background-size: 15px;cursor: pointer; display: inline-block;background-image: url(../img/radio.svg);background-position: 0px 7px;    padding: 6px 30px 5px 22px;}
+
+
+input[type=radio]:checked + label {background-image:url(../img/radio1.svg);}
+input[type=radio].inputDT + label {
+    padding-left: 22px;
+    background-repeat: no-repeat;
+    background-size: 15px;
+    cursor: pointer;
+    height: 23px;
+    display: inline-block;
+    background-position: center;
+    padding: 6px 30px 5px 22px;
+}
+input[type=radio].alone + label {background-position: 0px 2px;padding: 0px 13px 0px 0px;}
+.divCol2Input, .divGenero {display: flex;flex-wrap: wrap;align-items: center;}
+.divCol2Input div {min-width: 160px;}
+.divGenero div {
+    min-width: 70px !important;
+}

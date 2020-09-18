@@ -1,0 +1,16 @@
+.tblGeneral {width: 98.8%;padding: 10px 0%;margin: 0px auto;}
+.tblGeneral tr th {padding: 5px 10px 6px 10px;color: #333333;text-align: center;font-weight: 100;border-bottom: 2px solid  var(--main-color);font-size: 12px;font-family: 'AvenirNextLTPro-Medium';min-width: 87px;}
+.tblGeneral tr td {padding: 7px 10px 7px 10px;color: #606664; text-align: center;border-bottom: 3px solid #ffffff;    border-right: 2px solid #fff;}
+.tblGeneral tr:nth-child(odd) td {background-color: #f2f2f2;}
+.tblGeneral tr:nth-child(even) td {background-color: #ffffff;}
+.tblGeneral tr:hover td {    background-color: #e6efe6;}
+.tblGeneral tr td a{color: #5fac98;text-decoration: underline;font-family: var(--main-font-medium);}
+.tblGeneral tr td img{width: 15px;    cursor: pointer;}
+.cantidad {
+    width: 120px;
+    margin: auto;
+    text-align: right;    color: #000;
+}
+tr.total  td{font-family: var(--main-font-demi);}
+
+

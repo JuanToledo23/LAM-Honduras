@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Honduras</title>
+    <script src="assets/js/vue.js"></script>
+    <script src="assets/js/vue-router.js"></script>
+    <script src="assets/js/vuex.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <div id="app">
+        <app_header></app_header>
+        <router-view></router-view>
+    </div>
+    <!-- Componentes -->
+    <script src="./components/header.js"></script>
+    <script src="./components/contratacion-inversion-ai-plazo.js"></script>
+
+    <!-- Modulo -->
+    <script>
+        const routes = [
+            { path: '/', component: contratacionInversionIaPlazo }
+        ]
+        const router = new VueRouter({
+            routes
+        })
+
+        var store = new Vuex.Store({
+            state: {
+                ruta: 'Honduras',
+                resultadosBusqueda: [
+                    {
+                        clienteU: '0201035741105',
+                        cuenta: '03570100198767',
+                        tipoCuenta: '500',
+                        imgTarjeta: 'assets/img/guardadito.gif',
+                        tipoTarjeta: '001',
+                        nombreTarjeta: 'CP - Tarjeta Visa Anonima',
+                        validaHasta: '30/12/2019',
+                        estatus: 'Robada',
+                        apellidoP: 'Ramírez',
+                        apellidoM: 'Romero',
+                        nombre: 'Coyolxauhqui',
+                        apellidoC: '',
+                        estadoFamiliar: 'Soltera',
+                        fechaN: '00/01/1900',
+                        foto: 'assets/img/usuarios/207207.jpg'
+                    }
+                ],
+            },
+            getters: {
+                get_ruta: function (state) {
+                    return state.ruta;
+                },
+                get_cliente: function (state) {
+                    return state.resultadosBusqueda;
+                }
+            },
+            mutations: {
+                set_ruta: function (state, nueva_ruta) {
+                    state.ruta = nueva_ruta;
+                },
+                set_cliente: function (state, buqueda_resultado) {
+                    state.resultadosBusqueda = buqueda_resultado;
+                }
+            },
+            actions: {
+                
+            }
+        });
+
+        var app = new Vue({
+            router,
+            store: store
+        }).$mount('#app')
+
+    </script>
+</body>
+
+</html>
