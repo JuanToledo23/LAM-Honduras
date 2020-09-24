@@ -2,31 +2,46 @@
 <html>
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Honduras</title>
-    <script src="assets/js/vue.js"></script>
-    <script src="assets/js/vue-router.js"></script>
-    <script src="assets/js/vuex.js"></script>
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 
 <body>
     <div id="app">
         <app_header></app_header>
-        <router-view></router-view>
+        <div class="contSecc">
+            <buscador></buscador>
+            <router-view></router-view>
+        </div>
     </div>
+</body>
+
+    <script src="assets/js/vue.js"></script>
+    <script src="assets/js/vue-router.js"></script>
+    <script src="assets/js/vuex.js"></script>
+    
     <!-- Componentes -->
     <script src="./components/header.js"></script>
+    <script src="./components/buscador.js"></script>
+    <script src="./components/autorizacion-cuenta-pep.js"></script>
     <script src="./components/contratacion-inversion-ai-plazo.js"></script>
 
     <!-- Modulo -->
     <script>
+
+        /* Rutas */
         const routes = [
-            { path: '/', component: contratacionInversionIaPlazo }
+            { path: '/autorizacion-cuentas-pep', component: autorizacionCuentaPep },
+            { path: '/contratacion-inversion-ai-plazo', component: contratacionInversionIaPlazo }
         ]
         const router = new VueRouter({
             routes
         })
 
+        /* Store */
         var store = new Vuex.Store({
             state: {
                 ruta: 'Honduras',
@@ -40,13 +55,13 @@
                         nombreTarjeta: 'CP - Tarjeta Visa Anonima',
                         validaHasta: '30/12/2019',
                         estatus: 'Robada',
-                        apellidoP: 'Ramírez',
-                        apellidoM: 'Romero',
-                        nombre: 'Coyolxauhqui',
+                        apellidoP: 'Toledo',
+                        apellidoM: 'Tello',
+                        nombre: 'Juan Alberto',
                         apellidoC: '',
-                        estadoFamiliar: 'Soltera',
+                        estadoFamiliar: 'Soltero',
                         fechaN: '00/01/1900',
-                        foto: 'assets/img/usuarios/207207.jpg'
+                        foto: 'assets/img/usuarios/88838.jpg'
                     }
                 ],
             },
@@ -64,6 +79,9 @@
                 },
                 set_cliente: function (state, buqueda_resultado) {
                     state.resultadosBusqueda = buqueda_resultado;
+                },
+                updateMessage (state, message) {
+                    state.obj.message = message
                 }
             },
             actions: {
@@ -71,12 +89,11 @@
             }
         });
 
+        /* Aplicación */
         var app = new Vue({
             router,
             store: store
         }).$mount('#app')
-
     </script>
-</body>
 
 </html>

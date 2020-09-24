@@ -10,7 +10,7 @@ img#imgLogo {padding: 4px 0px 0px 0px;height: 42px;}
 .headerUser {display: flex;align-items: center;}	
 .user-menu {margin: 23px 4px 0px 4px;}
 .name {color: #000;font-size: 12px;    line-height: 17px; text-align: right;}
-.contSecc {width: 94%;margin-top: 20px;margin: auto;}
+/* .contSecc {width: 94%;margin-top: 20px;margin: auto;} */
 /*Titulo*/
 .titulo {padding: 2px 2% 6px 15px;
     background-color: #fafafa;

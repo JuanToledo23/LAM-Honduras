@@ -1,30 +1,113 @@
-.tblGeneral tr td img.icoLogo {cursor: pointer;width: 70px;}
-.tblCheck tr th:nth-child(1), .tblCheck tr td:nth-child(1){ width: 50px !important;}
-.divCriterior {display: flex;justify-content: space-around;margin-bottom: 10px;}
-.divCriterior > div {text-align: center;color: #006341;font-size: 13px;}
-.divCriterior > div > div { border: 3px solid #006341;border-radius: 50%;text-align: center;width: 50px;height: 50px;display: flex;justify-content: center;    margin: auto;}
-.divCriterior > div > div img{width: 80%;}
-img.imgFoto {width: 90%;}
-.divCol4 > .col4:nth-child(8){ width: 100% !important;}
-.divCol4 > .col4:nth-child(8) a.btn1 {width: 23%;margin: auto;}
-.tblDetalelTar tr td{text-align: left;}
-.tblDetalelTar tr td:nth-child(1){font-family: 'AvenirNextLTPro-Medium';}
-.divSimple {display: flex;padding: 20px 0px 5px 0px;}
-.divSimple > div{padding-right: 20px;
+.tblGeneral tr td img.icoLogo {
+    cursor: pointer;
+    width: 70px;
 }
-.infoUsuario {display: flex; justify-content: space-between;}
-.infoUsuario > div:nth-child(1){width: 171; margin-right: 2%;;}
+.tblCheck tr th:nth-child(1),
+.tblCheck tr td:nth-child(1) {
+    width: 50px !important;
+}
+.divCriterior {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+.divCriterior > div {
+    text-align: center;
+    color: #006341;
+    font-size: 13px;
+}
+.divCriterior > div > div {
+    border: 3px solid #006341;
+    border-radius: 50%;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+.divCriterior > div > div img {
+    width: 80%;
+}
+img.imgFoto {
+    width: 90%;
+}
+.divCol4 > .col4:nth-child(8) {
+    width: 100% !important;
+}
+.divCol4 > .col4:nth-child(8) a.btn1 {
+    width: 23%;
+    margin: auto;
+}
+.tblDetalelTar tr td {
+    text-align: left;
+}
+.tblDetalelTar tr td:nth-child(1) {
+    font-family: "AvenirNextLTPro-Medium";
+}
+.divSimple {
+    display: flex;
+    padding: 20px 0px 5px 0px;
+}
+.divSimple > div {
+    padding-right: 20px;
+}
+.infoUsuario {
+    display: flex;
+    justify-content: space-between;
+}
+.infoUsuario > div:nth-child(1) {
+    width: 265px;
+    display: flex;
+    justify-content: center;
+}
 
-.infoUsuario > div:nth-child(2){width: 85%; }
-img.viewFoto { width: 100%; display: flex;}
-.divFoto { position: relative;}
+.infoUsuario > div:nth-child(2) {
+    width: 85%;
+}
+img.viewFoto {
+    width: 100%;
+    display: flex;
+}
+.divFoto {
+    position: relative;
+}
 .divFoto img {
     height: 100px;
 }
-img.imgLupa {position: absolute;width: 30px;bottom: 20px;right: 15px;cursor: pointer;}
-.divImgCenter{display: flex;justify-content: center;}
-.divDatos{margin: 1rem 0 1rem 0;}
-.divDatos > div:first-child{font-family: 'Avenir_Next_Demi_Bold';}
-.imgTarjeta {position: relative;margin: auto;height: 250px;text-align: center;}
-.imgTarjeta > div {justify-content: center;align-items: center;position: absolute;margin: 0px;width: 100%;}
-.divTarjeta {font-size: 20px;color: #fff;font-family: 'Avenir_Next_Bold';bottom: 40%;}
+img.imgLupa {
+    position: absolute;
+    width: 30px;
+    bottom: 20px;
+    right: 15px;
+    cursor: pointer;
+}
+.divImgCenter {
+    display: flex;
+    justify-content: center;
+}
+.divDatos {
+    margin: 1rem 0 1rem 0;
+}
+.divDatos > div:first-child {
+    font-family: "Avenir_Next_Demi_Bold";
+}
+.imgTarjeta {
+    position: relative;
+    margin: auto;
+    height: 250px;
+    text-align: center;
+}
+.imgTarjeta > div {
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin: 0px;
+    width: 100%;
+}
+.divTarjeta {
+    font-size: 20px;
+    color: #fff;
+    font-family: "Avenir_Next_Bold";
+    bottom: 40%;
+}
